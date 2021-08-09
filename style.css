@@ -57,12 +57,12 @@ nav-item{
 }
 
 .bg-dark{
-  background-color: rgba(0,0,0,0.7) !important;
+  background-color: rgba(0,0,0,0.44) !important;
   border-radius: 1.5rem;
   padding: 1rem;
 }
 .bg-white{
-  background-color: rgba(255,255,255,0.65) !important;
+  background-color: rgba(255,255,255,0.44) !important;
   border-radius: 1.5rem;
   padding: 1rem;
 }
