@@ -13,9 +13,9 @@
   <title>Website</title>
   <link rel="shortcut icon" href="favicon.ico">
   <!-- Bootstrap Css -->
-  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="css\bootstrap.min.css">
   <!-- Style Css -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css\style.css">
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -35,7 +35,7 @@
               <a class="nav-link" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
+              <a class="nav-link" href="#aboutus">ABOUT</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">FEATURES</a>
@@ -44,7 +44,7 @@
               <a class="nav-link " href="#">LOGIN</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">CONTACT US</a>
+              <a class="nav-link " href="#contactus">CONTACT US</a>
             </li>
           </ul>
         </div>
@@ -57,10 +57,10 @@
     <!-- Carousel Content -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img1.jpg" alt="img1" class="d-block w-100">
+        <img src="carousel\img1.jpg" alt="img1" class="d-block w-100">
         <div class="carousel-caption">
           <div class="container">
-            <div class="row justify-content-end">
+            <div class="row  ">
               <!-- The caption box do not appear in a small screen and starts appearing as the screen gets alrger
           bg dark sets background dark and text-right allign texts to the right inside the box -->
               <div class="d-none d-md-block col-11-md col-lg-9 col-xl-8 bg-dark text-right">
@@ -69,7 +69,7 @@
                 <div class="border-top border-whilte mb-3 w-75 ml-auto"></div>
                 <p class="lead">We designed our website User Friendly & Easy to use</p>
                 <!-- btn-primary is a bootstrap class for button -->
-                < <a href="#" class="btn btn-primary btn-md">Learn More</a> 
+                 <a href="#" class="btn btn-primary btn-md">Learn More</a> 
 
               </div>
             </div>
@@ -79,16 +79,16 @@
 
 
       <div class="carousel-item">
-        <img src="img2.jpg" alt="img2" class=" d-block w-100">
+        <img src="carousel\img2.jpg" alt="img2" class=" d-block w-100">
       </div>
 
 
 
       <div class="carousel-item ">
-        <img src="img3.jpg" alt="img3" class="d-block w-100">
+        <img src="carousel\img3.jpg" alt="img3" class="d-block w-100">
         <div class="carousel-caption">
-          <div class="container">
-            <div class="row justify-content-end">
+          <div class="container ">
+            <div class="row justify-content-end ">
               <div class="d-none d-md-block col-md-9 col-lg-7 bg-white text-left text-dark">
                 <h3>HD Video and Voice Quality</h3>
                 <div class="border-top border-dark my-1 w-75 "></div>
@@ -109,53 +109,84 @@
       <li data-target="#carousel" data-slide-to="2"></li>
     </ol>
   </div>
+<!-- About Us -->
+
+    <div class="container mt-5 mb-5">
+<section class="section" id="aboutus">
+   
+        <h2 class="text-big justify-content-center text-center font-weight-bold mb-3">About Us</h2>
+        <p class="sectionSubTag text-small"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mauris odio, interdum eget vehicula eu, ultricies id leo. Suspendisse hendrerit dolor ex, non dignissim turpis dignissim vel. Nullam sit amet aliquam risus, eget vestibulum lacus. Curabitur sit amet ullamcorper ipsum, luctus ultricies arcu. Vestibulum mattis magna turpis, nec congue nisl iaculis pulvinar. Nunc molestie elit sit amet urna gravida fermentum. Sed feugiat orci et pretium vehicula.
+        </p>
+    
+</section>
+</div>
+
+  <!-- border -->
+  <div class=" w-100 mx-auto shadow p-1 mb-1"></div>
 
 
-  <div id="social-media-sticky">
-
-    <!-- Start the Social Jumpotron -->
-    <div class="jumbotron sticky-top">
-      <div class="container">
-        <div class="row  justify-content-center text-center">
-          <!-- doesnt display text on small screen but displays it half of the width ie 6 in large screens -->
-          <d-none class="d-none d-xl-block col-xl-6 pt-1"></d-none>
-          <!-- <h5 class="social-heading">Connect us on social media!</h5> -->
+  <!-- Footer -->
+  <footer id="contactus">
+    <div class="container">
+      <div class="row justify-content-center text-center text-light">
+        <div class="col-md-9">
+          <h2 class="main-contact-heading">Get In Touch!</h2>
         </div>
-        <!-- pt-1 adds a padding  -->
-        <div class="col-sm-10 col-md-8 col-7 col-xl-6 pt-1"></div>
-        <ul class="social">
-          <li><a href="" target="_blank"></a>
-            <i class="fab fa-facebook" style=" color: #3b5998 "></i>
-          </li>
-          <li><a href="" target="_blank"></a>
-            <i class="fab fa-twitter" style=" color: #00aced "></i>
-          </li>
-          <li><a href="" target="_blank"></a>
-            <i class="fab fa-instagram-square" style=" color: #3f729b "></i>
-          </li>
-          <li><a href="" target="_blank"></a>
-            <i class="fab fa-youtube" style=" color: #c4302b "></i>
-          </li>
-          <li><a href="" target="_blank"></a>
-            <i class="fab fa-pinterest" style=" color: #c8232c "></i>
-          </li>
-          <li><a href="" target="_blank"></a>
-            <i class="fab fa-linkedin" style=" color: #0e76a8 "></i>
-          </li>
-        </ul>
+        <div class="col-md-4">
+          <!-- bg-light For a light border -->
+          <hr class="bg-light">
+          <h4 class="sub-contact">Contact Info</h4>
+          <hr class="bg-light">
+          <p><a href="tel:+99999999999">+99 999 9999 999</a></p>
+          <p><a href="mailto:+videochat@email.com">email@email.com</a></p>
+          <p>XYZ Street</p>
+          <p>City  Country</p>
+        </div>
+
+        <div class="col-md-4">
+          <!-- bg-light For a light border -->
+          <hr class="bg-light">
+          <h4 class="sub-contact">Company</h4>
+          <hr class="bg-light">
+          <p><a href="#">FAQ's</a></p>
+          <p><a href="#">Privacy Policy</a></p>
       </div>
+
+      <div class="col-md-4">
+        <!-- bg-light For a light border -->
+        <hr class="bg-light">
+        <h4 class=" social sub-contact">Social Media</h4>
+        <hr class="bg-light">
+        <p><a href="" target="_blank"></a>
+          <i class="fab fa-facebook fa-lg" style=" color:white "></i></p>
+        
+      <p><a href="#" target="_blank"></a>
+        <i class="fab fa-twitter fa-lg" style=" color: white "></i></p>
+      
+        <p><a href="#" target="_blank"></a>
+          <i class="fab fa-instagram-square fa-lg" style=" color: white "></i></p>
+        
+        
+        <p><a href="#" target="_blank"></a>
+          <i class="fab fa-linkedin fa-lg" style=" color: white "></i></p>
+        
     </div>
+    </div>
+  </footer>
 
+  <!-- Socket -->
+  <div class="socket text-light text-center py-4">
+    <p>&copy 2021 Video Chat Website<a href="#" target="_blank"></a></p>
+  </div>
 
-    <div class="space" style="height:80vh"></div>
     <!-- J Query -->
-    <script src="jquery-3.4.1.min.js>"></script>
+    <script src="js\jquery-3.4.1.min.js>"></script>
     <!-- Bootstrap Js -->
-    <script src="bootstrap.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
     <!-- Popper Js -->
-    <script src="popper.min.js"></script>
+    <script src="js\popper.min.js"></script>
     <!-- Font Awesome -->
-    <script src="all.min.js"></script>
+    <script src="js\all.min.js"></script>
 </body>
 
 </html>
