@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <title>Website</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Bootstrap Css -->
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <!-- Style Css -->
+  <link rel="stylesheet" href="css\style.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="navigation-sticky">
+    <!-- navigation menu -->
+    <nav class="navbar bg-light navbar-light navbar-expand-lg sticky-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"><img src="logo.png" alt="logo" title="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+  </div>
+  <!-- Image carousel -->
+  <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <!-- Carousel Content -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="carousel\img1.jpg" alt="img1" class="d-block w-100">
+        <div class="carousel-caption">
+          <div class="container">
+            <div class="row justify-content-end">
+              <!-- The caption box do not appear in a small screen and starts appearing as the screen gets alrger
+          bg dark sets background dark and text-right allign texts to the right inside the box -->
+              <div class="d-none d-md-block col-11-md col-lg-9 col-xl-8 bg-dark text-right">
+                <!-- pb is bootstrap class to add border -->
+                <h3 class="pb-3">Best Video Chat Experience</h3>
+                <div class="border-top border-whilte mb-3 w-75 ml-auto"></div>
+                <p class="lead">We designed our website User Friendly & Easy to use</p>
+                <!-- btn-primary is a bootstrap class for button -->
+                <!-- <a href="#" class="btn btn-primary btn-md">Learn More</a> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <img src="carousel\img2.jpg" alt="img2" class=" d-block w-100">
+      </div>
+
+
+
+      <div class="carousel-item ">
+        <img src="carousel\img3.jpg" alt="img3" class="d-block w-100">
+        <div class="carousel-caption">
+          <div class="container">
+            <div class="row">
+              <div class="d-none d-md-block col-md-9 col-lg-7 bg-white text-left text-dark">
+                <h3>HD Video and Voice Quality</h3>
+                <div class="border-top border-dark my-1 w-75 "></div>
+                <p class="lead">You don't have to deal with grainy sound, echo, feedback, or other disruptions.</p>
+                <a href="#" class="btn btn-light btn-md">Learn More</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- carousel indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+  </div>
+
+
+  <div id="social-media-sticky">
+
+    <!-- Start the Social Jumpotron -->
+    <div class="jumbotron sticky-top">
+      <div class="container">
+        <div class="row  justify-content-center text-center">
+          <!-- doesnt display text on small screen but displays it half of the width ie 6 in large screens -->
+          <d-none class="d-none d-xl-block col-xl-6 pt-1"></d-none>
+          <!-- <h5 class="social-heading">Connect us on social media!</h5> -->
+        </div>
+        <!-- pt-1 adds a padding  -->
+        <div class="col-sm-10 col-md-8 col-7 col-xl-6 pt-1"></div>
+        <ul class="social">
+          <li><a href="" target="_blank"></a>
+            <i class="fab fa-facebook" style=" color: #3b5998 "></i>
+          </li>
+          <li><a href="" target="_blank"></a>
+            <i class="fab fa-twitter" style=" color: #00aced "></i>
+          </li>
+          <li><a href="" target="_blank"></a>
+            <i class="fab fa-instagram-square" style=" color: #3f729b "></i>
+          </li>
+          <li><a href="" target="_blank"></a>
+            <i class="fab fa-youtube" style=" color: #c4302b "></i>
+          </li>
+          <li><a href="" target="_blank"></a>
+            <i class="fab fa-pinterest" style=" color: #c8232c "></i>
+          </li>
+          <li><a href="" target="_blank"></a>
+            <i class="fab fa-linkedin" style=" color: #0e76a8 "></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="space" style="height:80vh"></div>
+    <!-- J Query -->
+    <script src="js\jquery-3.4.1.min.js>"></script>
+    <!-- Bootstrap Js -->
+    <script src="js\bootstrap.min.js"></script>
+    <!-- Popper Js -->
+    <script src="js\popper.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="js\all.min.js"></script>
+</body>
+
+</html>
