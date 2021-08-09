@@ -48,6 +48,7 @@ nav-item{
   margin-right: 4px;
   margin-left: 4px;
 }
+
 /*-- Carousel Content --*/
 .carousel-caption{
   position : absolute;
@@ -73,34 +74,7 @@ nav-item{
 p.lead {
   font-size:1.4rem;
 }
-/*============= SOCIAL MEDIA STICKY BAR =============*/
-.social-heading{
-  text-align: center;
-  font-weight: normal;
-}
-.jumbotron {
-  background: linear-gradient(to right, #f2f2f2, #FBFBFB);
-  padding: 1rem 0 .5rem;
-  margin-bottom: 0;
-  border-radius: 0;
-  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
-}
-ul.social{
-  list-style-type:none;
-  display:flex;
-  padding : 0;
-  margin : 0 auto;
-}
-ul.social li{
-  margin: 0 auto;
-}
-.jumbotron .svg-inline--fa{
-  font-size: 2rem;
-  margin: 0 1rem;
-}
-.jumbotron .svg-inline--fa : hover{
-  color : gray !important;
-}
+
 /*============= COLUMN CONTENT =============*/
 
 .fa-square{
@@ -108,32 +82,103 @@ ul.social li{
 }
 
 
-
 /*============= FOOTER =============*/
+footer{
+  background-color: #383838;
+  padding:1rem 2rem 1rem;
+}
 
+footer a,
+.socket a{
+  color:white;
+  text-decoration: none;
+}
+.fa-facebook :hover,
+.fa-linkedin :hover
+{
+  color:#396AFC;
+
+}
+.fa-twitter :hover{
+  color:deepskyblue;
+}
+.fa-instagram-square :hover{
+  color:crimson;
+}
 
 
 /*============= SOCKET =============*/
+.socket{
+  background-color: #222222;
+  border-top: 0.1rem solid grey;
+}
 
+/*============= ABOUT =============*/
+.sectionTag{
+  padding: 16px 0;
+}
+.paras{
+  padding: 0px 65px;
+}
 
 
 /*============= MEDIA QUERIES =============*/
 
 /* Devices under 1199px (xl) */
 @media (max-width: 1199.98px) {
-
+  .carousel-caption h3{
+    font-size:1.3rem;
+  }
 }
 /* Devices under 992px (xl) */
 @media (max-width: 991.98px) {
-
+  .carousel-indicators li{
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+  .sub-contact{
+    font-size: 1.5rem;;
+  }
 }
 /* Devices under 768px (md) */
 @media (max-width: 767.98px) {
-
+  .navbar-brand img{
+    height : 2.5rem;
+  }
+  .navbar{
+    font-size: 1rem;
+    padding: 0.4rem 0.6rem;
+  }
+  .navbar-toggler{
+    transform:scale(.9);
+  }
+}
+.main-contact-heading{
+  font-size: 2.1rem;
+}
+.sub-contact{
+  font-size: 1.2rem;;
 }
 /* Devices under 576px (sm) */
 @media (max-width: 575.98px) {
-
+  .navbar-brand img{
+    height : 2.3rem;
+  }
+  .navbar{
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .navbar-toggler{
+    transform:scale(.9);
+  }
+  .main-contact-heading{
+    font-size: 2rem;
+  }
+  .sub-contact{
+    font-size: 1rem;;
+  }
 }
 
 
@@ -161,4 +206,5 @@ Extra (xl) large devices (large desktops, 1200px and up)
   margin-left: 0px !important;
   margin-right: 0px !important;
 }
+
 
