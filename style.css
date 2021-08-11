@@ -84,11 +84,14 @@ p.lead {
 
 /*============= FOOTER =============*/
 footer{
-  background-color: #383838;
+  background: linear-gradient(-45deg, #6e81a1, #0c1824);
   padding:1rem 2rem 1rem;
 }
+footer a{
+  color:white;
+  text-decoration: none;
+}
 
-footer a,
 .socket a{
   color:white;
   text-decoration: none;
@@ -106,7 +109,6 @@ footer a,
   color:crimson;
 }
 
-
 /*============= SOCKET =============*/
 .socket{
   background-color: #222222;
@@ -121,6 +123,47 @@ footer a,
   padding: 0px 65px;
 }
 
+/* ========== CARD ANIMATION ============= */
+.card-wrapper{
+  height: 400px;
+  width: 300px;
+  perspective: 1000px;
+  border: rgba(0,0,0,0.44);
+}
+
+.content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-wrapper:hover .content{
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+.card_red, .card_red .title .fa {
+  background: linear-gradient(-45deg,#C9D6FF, #E2E2E2);
+}
+.card_violet, .card_violet .title .fa  {
+  background: linear-gradient(-45deg, #1c92d2, #f2fcfe);
+}
+.card_three, .card_three .title .fa  {
+  background: linear-gradient(-45deg, #a1ffce, #faffd1);
+}
+.face-front, .face-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: black;
+}
+
+.face-back{
+  transform: rotateY(180deg);
+}
 
 /*============= MEDIA QUERIES =============*/
 
@@ -141,6 +184,14 @@ footer a,
   .sub-contact{
     font-size: 1.5rem;;
   }
+
+  /* features */
+  #wekcard{
+    width: 50% !important;
+}
+.align-content-center .card-wrapper{
+  margin:auto;
+}
 }
 /* Devices under 768px (md) */
 @media (max-width: 767.98px) {
