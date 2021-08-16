@@ -285,7 +285,7 @@ margin-right: auto;
   text-align: left;
 }
 h6{
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .my-form{
