@@ -1,0 +1,488 @@
+/*-- Reset --*/
+html, body {
+  /* Overflow to x so that there is no item displayed outside the body */
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar-brand img{
+  height:2.8rem;
+}
+.navbar {
+    background: linear-gradient(to right, #ffffff, #dcdfe4);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .25);
+}
+
+nav-item{
+  padding : .4rem;
+}
+.nav-link{
+  color:black !important;
+}
+.nav-link:hover{
+  color: #396AFC !important;
+
+}
+
+/*============= CAROUSEL =============*/
+.carousel-inner{
+  max-height: 35rem !important;
+}
+
+
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next, .carousel-item-prev,.corouse-item.active{
+  transition: transform 1.2s ease;
+}
+.carousel-indicators li{
+  width: 40px;
+  height: 5px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+/*-- Carousel Content --*/
+.carousel-caption{
+  position : absolute;
+  top: 47%;
+  /* move the column up to 50% of its own height */
+  transform:translateY(-50%);
+}
+
+.bg-dark{
+  background-color: rgba(0,0,0,0.44) !important;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+.bg-white{
+  background-color: rgba(255,255,255,0.44) !important;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+.carousel-caption {
+  font-size:2.3rem;
+  font-weight:300;
+}
+p.lead {
+  font-size:1.4rem;
+}
+
+/*============= COLUMN CONTENT =============*/
+
+.fa-square{
+  opacity:.05;
+}
+
+/*============= USER LOGIN AND SIGN UP =============*/
+
+ #login {
+   background-image: url("https://images.unsplash.com/photo-1550850839-8dc894ed385a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGFuZHNjYXBlJTIwY2l0eXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60");     
+   background-attachment: fixed;
+   min-height: 500px;
+   background-size: cover;
+    margin-top:3rem;
+    margin-bottom: 5rem;
+   width:100%
+
+
+} 
+.form-control{
+  background:transparent !important;
+  color:white !important;
+  border-radius: 0px;
+  border:0px;
+  border-bottom : 1px solid grey;
+  padding:15px;
+  font-size:21px;
+}
+
+h3{
+  color:white;
+}
+
+.logincol{
+  background:rgba(0, 0, 0, .5);
+  margin-top:40px;
+  margin-left:auto;
+  margin-bottom:40px;
+  margin-right: auto;
+  
+}
+.control-label{
+  text-align:left !important;
+}
+input[type="checkbox"]{
+  height:15px;
+  width:15px;
+
+}
+small{
+  font-size:15px;
+  color:white !important;
+}
+
+.btn-default{
+  border-radius: 0px;
+  width:47px;
+  font-size:18px;
+  color:seashell !important;
+}
+
+/*============= FOOTER =============*/
+footer{
+  background: linear-gradient(-45deg, #6e81a1, #0c1824);
+  padding:1rem 2rem 1rem;
+}
+footer a{
+  color:white;
+  text-decoration: none;
+}
+
+.socket a{
+  color:white;
+  text-decoration: none;
+}
+.fa-facebook :hover,
+.fa-linkedin :hover
+{
+  color:#396AFC;
+
+}
+.fa-twitter :hover{
+  color:deepskyblue;
+}
+.fa-instagram-square :hover{
+  color:crimson;
+}
+
+p{
+  font-size: 1.2rem !important;
+}
+h6{
+  font-size:1rem !important;
+  font-weight: normal !important;
+}
+/*============= SOCKET =============*/
+/* .socket{
+  background: linear-gradient(-45deg, #6e81a1, #0c1824);
+   border-top: 0.1rem solid grey; 
+} */
+
+/*============= ABOUT =============*/
+.sectionTag{
+  padding: 16px 0;
+}
+.paras{
+  padding: 0px 65px;
+}
+
+
+/*about us image section*/
+
+ .about-col{
+  border-radius: 10px;
+  position:relative;
+  overflow: hidden;
+}
+ .about-col img{
+width: 95%;
+height: 70%;
+border-radius: 10px;
+display: block;
+margin-left:auto;
+margin-right: auto;
+ } 
+
+
+
+/* ========== CARD ANIMATION ============= */
+.card-wrapper{
+  height: 400px;
+  width: 300px;
+  perspective: 1000px;
+  border: rgba(0,0,0,0.44);
+}
+
+.content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-wrapper:hover .content{
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+.card_red, .card_red .title .fa {
+  background: linear-gradient(-45deg,#C9D6FF, #E2E2E2);
+}
+.card_violet, .card_violet .title .fa  {
+  background: linear-gradient(-45deg, #1c92d2, #f2fcfe);
+}
+.card_three, .card_three .title .fa  {
+  background: linear-gradient(-45deg, #a1ffce, #faffd1);
+}
+.face-front, .face-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: black;
+}
+
+.face-back{
+  transform: rotateY(180deg);
+}
+
+/*============= REVIEW SECTION =============*/
+.reviews{
+  width: 80%;
+  margin: auto;
+/*  padding-top: 100px; */
+  text-align: center;
+}
+.reviews-col{
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  margin-right: 25px;
+  margin-left: 25px;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+.reviews-col img{
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 40%;
+}
+.reviews-col p{
+  padding:0;
+}
+.reviews h3{
+  padding-bottom: 15px;
+  font-weight: bold;
+  color: #000;
+}
+
+.reviews-col h3{
+  margin-top: 15px;
+  text-align: left;
+}
+h6{
+  font-weight: bold;
+}
+
+.my-form{
+  margin: auto;
+  padding: 0;
+  font-family:'Roboto',sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  display:flex;
+  min-height:60vh;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  width:100%;
+  background: #000;
+  box-shadow: 0 0 8px rgba(250,250,250,0.6);
+  opacity: 0.6;
+
+}
+.my-form form{
+    width: 100%;
+    text-align: center;
+    padding: 25px 20px;
+}
+form h1{
+  padding: 10px 0;
+}
+form .id{
+  position: relative;
+}
+form input{
+  width: 100%;
+  height: 50px;
+  margin: 4px 0;
+  border: 1px solid #5c5c5c;
+  border-radius: 3px;
+  background: #181717;
+  padding: 0 15px;
+  padding-right: 45px;
+  font-size: 20px;
+}
+form textarea{
+  padding: 5px 15px;
+  border: 1px solid #5c5c5c;
+  border-radius: 3px;
+  background: #181717;
+  font-size: 20px;
+  width: 100%;
+  margin: 4px 0;
+}
+input, select, textarea {
+color: white;
+}
+form button{
+  margin-top: 5px;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 3px;
+}
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+  .carousel-caption h3{
+    font-size:1.3rem;
+  }
+  .reviews-col{
+    min-width: 90%;
+  }
+}
+/* Devices under 992px (xl) */
+@media (max-width: 991.98px) {
+  .carousel-indicators li{
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+  .sub-contact{
+    font-size: 1.5rem;;
+  }
+
+  /* features */
+  #wekcard{
+    width: 50% !important;
+}
+.align-content-center .card-wrapper{
+  margin:auto;
+}
+
+.my-form{
+  width:80%;
+}
+.reviews-col{
+  min-width: 75%;
+  max-height: 30%;
+}
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+  .navbar-brand img{
+    height : 2.5rem;
+  }
+  .navbar{
+    font-size: 1rem;
+    padding: 0.4rem 0.6rem;
+  }
+  .navbar-toggler{
+    transform:scale(.9);
+  }
+  .main-contact-heading{
+    font-size: 2.1rem;
+  }
+  .sub-contact{
+    font-size: 1.2rem;;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .my-form{
+    width:80%;
+  }
+  .reviews-col{
+    min-width: 75%;
+    max-height: 30%;
+  }
+}
+
+/* Devices under 576px (sm) */
+@media (max-width: 575.98px) {
+  .navbar-brand img{
+    height : 2.3rem;
+  }
+  .navbar{
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .navbar-toggler{
+    transform:scale(.9);
+  }
+  .main-contact-heading{
+    font-size: 2rem;
+  }
+  .sub-contact{
+    font-size: 1.2rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .my-form{
+    width:90%;
+  }
+  .reviews-col{
+    min-width: 100%;
+    max-height: 23%;
+  }
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/* DEMO */
+.demo{
+  background-color: rgb(128, 255, 238);
+}
+
+.demo{
+  border-width: initial;
+}
+.chatbox{
+  border-width: initial;
+}
