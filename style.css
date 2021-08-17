@@ -137,45 +137,7 @@ small{
   color:seashell !important;
 }
 
-/*============= FOOTER =============*/
-footer{
-  background: linear-gradient(-45deg, #6e81a1, #0c1824);
-  padding:1rem 2rem 1rem;
-}
-footer a{
-  color:white;
-  text-decoration: none;
-}
 
-.socket a{
-  color:white;
-  text-decoration: none;
-}
-.fa-facebook :hover,
-.fa-linkedin :hover
-{
-  color:#396AFC;
-
-}
-.fa-twitter :hover{
-  color:deepskyblue;
-}
-.fa-instagram-square :hover{
-  color:crimson;
-}
-
-p{
-  font-size: 1.2rem !important;
-}
-h6{
-  font-size:1rem !important;
-  font-weight: normal !important;
-}
-/*============= SOCKET =============*/
-/* .socket{
-  background: linear-gradient(-45deg, #6e81a1, #0c1824);
-   border-top: 0.1rem solid grey; 
-} */
 
 /*============= ABOUT =============*/
 .sectionTag{
@@ -248,7 +210,7 @@ margin-right: auto;
 
 /*============= REVIEW SECTION =============*/
 .reviews{
-  width: 80%;
+  width: 100%;
   margin: auto;
 /*  padding-top: 100px; */
   text-align: center;
@@ -349,6 +311,45 @@ form button{
   cursor: pointer;
   border-radius: 3px;
 }
+/*============= FOOTER =============*/
+footer{
+  background: linear-gradient(-45deg, #6e81a1, #0c1824);
+  padding:1rem 2rem 1rem;
+}
+footer a{
+  color:white;
+  text-decoration: none;
+}
+
+.socket a{
+  color:white;
+  text-decoration: none;
+}
+.fa-facebook :hover,
+.fa-linkedin :hover
+{
+  color:#396AFC;
+
+}
+.fa-twitter :hover{
+  color:deepskyblue;
+}
+.fa-instagram-square :hover{
+  color:crimson;
+}
+
+p{
+  font-size: 1.2rem !important;
+}
+h6{
+  font-size:1rem !important;
+  font-weight: normal !important;
+}
+/*============= SOCKET =============*/
+/* .socket{
+  background: linear-gradient(-45deg, #6e81a1, #0c1824);
+   border-top: 0.1rem solid grey; 
+} */
 /*============= MEDIA QUERIES =============*/
 
 /* Devices under 1199px (xl) */
